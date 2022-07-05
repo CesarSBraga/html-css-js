@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+</head>
+<!-- Estilos internos -->
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    h1{
+        /* !important quebra hierarquia do estilo */
+        color: blue !important;
+    }
+    h2{
+        color: green;
+    }
+</style>
+<!-- BODY -->
+<body>
+     <!-- HEADER -->
+    <header>
+        <p>São Paulo, &nbsp;20 de Maio de 2022</p>
+        <p><a target="_blank" href="https://submarino.com.br">SUBMARINO</a></p>
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+    </header>
+
+   
+       
+        
+        <!-- NAV -->
+    <nav>
+        <div id="menuhb">
+            <img src="../img/misc/hamburguer.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="css.html">Css</a></li>
+            <li><a href="animacao.html">Animação</a></li>
+            <li><a href="iframe.html">Iframe</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="jquery.html">Jquery</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+            <li class="destaque"><a>Responsividade</a></li>
+            <li><a href="diagramacao.html">Diagramação</a></li>
+            <li><a href="storage.html">Local Storage</a></li>
+            <li><a href="formularios.html">Formulários</a></li>
+        </ul>
+    </nav>
+
+    <div id="conteudo">
+
+        <!-- SECTION -->
+        <section>
+            <h1 style="color: red;">Responsividade (viewport)</h1>
+            <article>
+
+                
+                
+                <p>
+                    <!-- <strong> (bold) negrito
+                         <mark> - marcação de texto
+                         <em> italico  -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur neque qui, atque enim eos voluptatem illo cum aspernatur amet cumque, velit inventore quae? <strong>Minima molestias ducimus reprehenderit iusto eos?</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<mark> Ullam ducimus nisi maiores</mark>, ratione distinctio, harum rem porro modi quis minus quibusdam odit corporis veritatis eveniet? Ducimus, molestiae hic. Hic, nemo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <em>Autem illo ab sit commodi blanditiis dolores dolorem</em> officia ipsum sequi necessitatibus non pariatur excepturi vel ipsam, temporibus culpa amet quis eveniet.
+                </p>
+
+                <ul class="paises">
+                    <li>Brasil</li>
+                    <li>Alemanha</li>
+                    <li>EUA</li>
+                    <li>França</li>
+                    <li>Japão</li>
+                    <li>Inglaterra</li>
+                    <li>Argentina</li>
+                    <li>Chile</li>
+                    <li>China</li>
+                    <li>Africa</li>
+                </ul>
+
+                <hr/>
+            </article>
+
+
+            <article>
+                <div id="d1">
+                    <div class="d1a">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ex in mollitia distinctio consectetur ea unde, eligendi expedita alias modi ut. Explicabo facilis vel nostrum iste sed cum quos repudiandae?</p>
+                    </div>
+                    <div class="d1b">
+                        <img src="../img/galeriaPref/animals09.jpg" class="" alt="">
+                    </div>
+                    <div class="d1c">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum quibusdam, voluptates numquam, repudiandae magni debitis beatae cupiditate, autem error vel id asperiores eum ducimus expedita praesentium sapiente. Porro, debitis eos.</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="border">
+                <h2>Carros Antigos</h2>
+                <div id="carros">
+                    
+                    <div id="carros1">
+                        <img src="../img/carros/brasilia.jpg" class="w-100" alt="">
+                        <img src="../img/carros/fusca.jpg" class="w-100" alt="">
+                        <img src="../img/carros/kombosa.jpg" class="w-100" alt="">
+                    </div>
+                    <div id="carros2">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio ex tempore corporis sunt at soluta nemo minus, nesciunt, suscipit magni nulla dignissimos vel id asperiores ab repellendus dicta qui enim?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut possimus, fugit repellat fuga, harum enim cum sequi praesentium dicta accusantium itaque libero veniam ipsam cupiditate impedit consequuntur, nesciunt maiores sint!</p>
+                        <img src="../img/nature/nature04.jpg" class="w-25" alt="" id="passat2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et praesentium magnam tenetur exercitationem, temporibus officia unde, cupiditate dolorum quas rem tempore commodi earum? Quas molestiae repellendus corporis cupiditate sunt? Asperiores!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus ullam neque autem, exercitationem voluptatem fugiat. Culpa, eaque? Soluta cumque adipisci veniam sed dolores nam, at culpa laboriosam modi quae!</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article>
+                <h2>Listas ordenadas e com marcadores</h2>
+                <span>&lt;ul&gt; | &lt;ol&gt; | &lt;li&gt;</span>
+                <h3>Listas ordenadas</h3>
+                <!-- type A, a I,i default = númerico -->
+                <ol type="a" start="4">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ol>
+                <h3>Listas com marcadores</h3>
+                <!-- type = disc(default), square, cicle -->
+                <ul type="square">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Texto Pré-Formatado</h2>
+                <span>Reflete quebras e tabulações</span>
+                <pre>
+                    "Deus não joga dados"
+                                Albert Einstein
+                </pre>
+            </article>
+        </section>
+        <!-- ASIDE -->
+        <aside></aside>
+        
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy;2022 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

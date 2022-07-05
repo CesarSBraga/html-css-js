@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+</head>
+<!-- Estilos internos -->
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    h1{
+        /* !important quebra hierarquia do estilo */
+        color: blue !important;
+    }
+    h2{
+        color: green;
+    }
+</style>
+<!-- BODY -->
+<body>
+     <!-- HEADER -->
+    <header>
+        <p>São Paulo, &nbsp;18 de Maio de 2022</p>
+        <p><a target="_blank" href="https://submarino.com.br">SUBMARINO</a></p>
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+    </header>
+
+   
+       
+        
+        <!-- NAV -->
+    <nav>
+        <ul>
+            <li ><a href="../index.html">Home</a></li>
+            <li class="destaque"><a>Imagens</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="css.html">Css</a></li>
+            <li><a href="animacao.html">Animação</a></li>
+            <li><a href="iframe.html">Iframe</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="jquery.html">Jquery</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+            <li><a href="responsividade.html">Responsividade</a></li>
+            <li><a href="diagramacao.html">Diagramação</a></li>
+            <li><a href="storage.html">Local Storage</a></li>
+            <li><a href="formularios.html">Formulários</a></li>
+        </ul>
+    </nav>
+
+    <div id="conteudo">
+
+        <!-- SECTION -->
+        <section>
+            <h1 style="color: red;">Imagens em HTML5</h1>
+            <article>
+
+                <h2>FORMATO JPG</h2>
+                <div class="img">
+                    <img src="../img/nature/animals07.jpg" alt="" class="w-50">
+                    <img src="../img/nature/animals07.jpg" class="w-25">
+                </div>
+
+                <h2>FORMATO PNG</h2>
+                <div class="img-png">
+                    <img src="../img/img-formatos/rex.png" class="w-50">
+                    <img src="../img/img-formatos/susto.png" class="w-10">
+                </div>
+                <h2>FORMATO GIF</h2>
+                <div class="img-gif">
+                    <img src="../img/img-formatos/cinemagrafia.gif" class="w-50"><img src="../img/img-formatos/cinemagrafia-02.gif" class="w-50">
+                </div>
+                <h2>FORMATO SVG</h2>
+                <div class="img-svg">
+                    <img src="../img/img-formatos/rocket.svg" class="w-25">
+                    <img src="../img/img-formatos/logo.svg" class="w-50">
+                </div>
+
+                
+                <p>
+                    <!-- <strong> (bold) negrito
+                         <mark> - marcação de texto
+                         <em> italico  -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur neque qui, atque enim eos voluptatem illo cum aspernatur amet cumque, velit inventore quae? <strong>Minima molestias ducimus reprehenderit iusto eos?</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<mark> Ullam ducimus nisi maiores</mark>, ratione distinctio, harum rem porro modi quis minus quibusdam odit corporis veritatis eveniet? Ducimus, molestiae hic. Hic, nemo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <em>Autem illo ab sit commodi blanditiis dolores dolorem</em> officia ipsum sequi necessitatibus non pariatur excepturi vel ipsam, temporibus culpa amet quis eveniet.
+                </p>
+                <hr/>
+            </article>
+            <article>
+                <h2>Listas ordenadas e com marcadores</h2>
+                <span>&lt;ul&gt; | &lt;ol&gt; | &lt;li&gt;</span>
+                <h3>Listas ordenadas</h3>
+                <!-- type A, a I,i default = númerico -->
+                <ol type="a" start="4">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ol>
+                <h3>Listas com marcadores</h3>
+                <!-- type = disc(default), square, cicle -->
+                <ul type="square">
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Texto Pré-Formatado</h2>
+                <span>Reflete quebras e tabulações</span>
+                <pre>
+                    "Deus não joga dados"
+                                Albert Einstein
+                </pre>
+            </article>
+        </section>
+        <!-- ASIDE -->
+        <aside></aside>
+        
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy;2022 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

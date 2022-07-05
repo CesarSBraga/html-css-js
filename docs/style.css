@@ -1,0 +1,13 @@
+#formagro{
+    /* display: grid; */
+    position: right;
+    align-items: right;
+    margin-right: 0;
+}
+body{
+    position: absolute;
+}
+body section{
+    position: relative;
+    display: inline-block;
+}

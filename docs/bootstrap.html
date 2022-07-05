@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script  src="../js/controle-jquery.js"></script>
+</head>
+<!-- Estilos internos -->
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    h1{
+        /* !important quebra hierarquia do estilo */
+        color: blue !important;
+    }
+    h2{
+        color: green;
+    }
+</style>
+<!-- BODY -->
+<body>
+     <!-- HEADER -->
+    <header class="bg-dark text-white pt-4 pb-4" >
+        <p class="text-right mr-4">São Paulo, &nbsp;06 de Junho de 2022</p>
+        <p class="text-center mx-auto"><a class="text-info" target="_blank" href="https://submarino.com.br">SUBMARINO</a></p>
+        <div class="w-25 mx-auto">
+            <img src="../img/logo.png" alt="" class="w-100" style="filter: invert(1)"/>
+        </div>
+    </header>
+
+   
+       
+        
+        <!-- NAV -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-light justify-content-center">
+        <div id="menuhb" class="d-none">
+            <img src="../img/misc/hamburguer.png" alt="">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="imagens.html">Imagens</a></li>
+            <li class="nav-item"><a class="nav-link" href="tabelas.html">Tabelas</a></li>
+            <li class="nav-item"><a class="nav-link" href="css.html">Css</a></li>
+            <li class="nav-item"><a class="nav-link" href="animacao.html">Animação</a></li>
+            <li class="nav-item"><a class="nav-link" href="iframe.html">Iframe</a></li>
+            <li class="nav-item"><a class="nav-link" href="javascript.html">Javascript</a></li>
+            <li class="nav-item"><a class="nav-link" href="jquery.html">Jquery</a></li>
+            <li class="nav-item active"><a class="nav-link">Bootstrap</a></li>
+            <li class="nav-item"><a class="nav-link" href="responsividade.html">Responsividade</a></li>
+            <li class="nav-item"><a class="nav-link" href="diagramacao.html">Diagramação</a></li>
+            <li class="nav-item"><a class="nav-link" href="storage.html">Local Storage</a></li>
+            <li class="nav-item"><a class="nav-link" href="formularios.html">Formulários</a></li>
+        </ul>
+    </nav>
+
+    <div id="conteudo" class="container">
+
+        <!-- SECTION -->
+        <section class="mt-5 mb-5">
+            <h1 style="color: red;">BOOTSTRAP - LIBRAY CSS</h1>
+            
+            <a href="../docs/javascript.html"><h4>Voltar para JavaScript </h4></a>
+            <article>
+
+                
+                
+                <p>
+                    <!-- <strong> (bold) negrito
+                         <mark> - marcação de texto
+                         <em> italico  -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur neque qui, atque enim eos voluptatem illo cum aspernatur amet cumque, velit inventore quae? <strong>Minima molestias ducimus reprehenderit iusto eos?</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<mark> Ullam ducimus nisi maiores</mark>, ratione distinctio, harum rem porro modi quis minus quibusdam odit corporis veritatis eveniet? Ducimus, molestiae hic. Hic, nemo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <em>Autem illo ab sit commodi blanditiis dolores dolorem</em> officia ipsum sequi necessitatibus non pariatur excepturi vel ipsam, temporibus culpa amet quis eveniet.
+                </p>
+                <hr/>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati repudiandae doloribus voluptas dolorum eligendi aliquid! Commodi, eveniet consequuntur error qui perspiciatis non ullam eum soluta beatae repellendus dolorem deserunt, dolores odio laborum a, mollitia sequi eligendi asperiores modi. Error?
+                </p>
+
+               
+                <hr/>
+
+            </article>
+                
+            <article id="a1">
+                <h2>Mouseenter, mouseleave, click</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quis iusto officiis praesentium dolore impedit molestiae dolor a, repellendus corporis nostrum quas saepe ipsum vel?</p>
+            </article>
+
+            <article id="a2">
+                <h2>hide, show, toggle</h2>
+                <div class="box">
+                    <p>Ver imagem</p>
+                    <img src="../img/planoDeFundo/plano6.jpg" alt="" class="w-50" style="display:none">
+                </div>
+
+                <h2>hide, show, toggle 2</h2>
+                <div class="box">
+                    <p>Ver imagem</p>
+                    <img src="../img/planoDeFundo/plano2.jpg" alt="" class="w-50" style="display:none">
+                </div>
+            </article>
+            <article id="a3">
+                <h2>hide, show, toggle</h2>
+                <div class="box">
+                    <p>Ver imagem</p>
+                    <img src="../img/planoDeFundo/plano1.jpg" alt="" class="w-50" style="display:inline-block" style="display: none;">
+                    <p>Ver imagem</p>
+                    <img src="../img/planoDeFundo/plano5.jpg" alt="" class="w-50" style="display:inline-block" style="display:none">
+                </div>
+            </article>
+
+
+
+           
+        </section>
+        <!-- ASIDE -->
+        <aside></aside>
+        
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white pt-4 pb-4 text-center font-weight-bold">
+        <p>&copy;2022 - Todos os direitos reservados</p>
+        <p>&reg; Desenvolvido por Roxo Tech´s</p>
+    </footer>
+</body>
+
+
+</html>
+<script>
+    // caixas de alertas//
+    // alert("hello world!");
+    // confirm("Bora aprender JavaScript?");
+</script>

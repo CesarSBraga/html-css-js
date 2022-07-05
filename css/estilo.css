@@ -1,0 +1,429 @@
+/* Global Styles /// */
+body,body *{
+    margin: 0;
+    padding: 0;
+}
+/* Identificadores */
+
+#box-01, .box{
+    border: 1px dashed  #ccc;
+    padding: 1%;
+    min-height: 150px;
+    /* min-width: 150px; */
+    width: 80%;
+    margin: 20px auto;
+}
+#box-01--left{
+    border: #999 1px solid;
+}
+#box-01--righ{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+#box-01--image{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+#box-01--image img{
+    width: 100%;
+}
+#box-01--image#small{
+    width: 80%;
+    font-size: 12px;
+}
+/* .d1--right{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+/* }  
+.d1--image{
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.d1--image img{
+    width: 100%;
+} 
+.d1--image.small{
+    width: 80%;
+    font-size: 12px;
+}
+*/
+
+#box-02{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#box-02 img{
+    width: 33%;
+    flex-grow: 1;/*preenche as ultimas imgs(caso precise) na ultima linha*/
+}
+#menuhb{
+    position: absolute;
+    top: -5vh;
+    right: 2vh;
+    filter: invert(1);
+    width: 2vh;
+    display: none;
+}
+#menuhb img{
+    width: 100%;
+}
+#carros{
+    display: flex;
+    flex-direction: flex;
+    border: 1px solid #ccc;
+    padding: 2%;
+    margin: 20px 0;
+}
+#carros1{
+    display: block;
+    padding: 1%;
+    width:  20%;
+    margin: 0.5%;
+    border: 1px solid #ccc;
+}
+#carros2{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 1%;
+    margin: 0.5%;
+    border: 1px solid #ccc;
+}
+#carros2 #passat2{
+    width: 25%;
+    display: block;
+    margin: 10px auto;
+}
+#d1{
+    display: flex;
+    flex-direction: row;
+
+    padding: 1%;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+#d1 p{
+    padding: 2%;
+}
+.d1a{
+    flex-grow: 1;
+    width: 29%;
+}
+.d1b{
+    flex-grow: 2;
+    width: 40%;
+}
+.d1b img{
+    width: 100%;
+}
+.d1c{
+    flex-grow: 3;
+    width: 29%;
+}
+#conteudo{
+    width: 80%;
+    margin: 0 auto;
+}
+#p1{
+    font-weight: bold;
+    line-height: 1.5em;
+    color: red;
+    margin-left: 5%;
+}
+/* TAGS */
+header,footer{
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(56, 58, 59);
+    padding-top: 0.2vh;
+    position: relative;/*aplicado para que a div logo seja controlada e tenha posiçao aqui dentro*/
+}
+header p, footer p{
+    color: white;
+    margin: 2% 0 2% 5%;
+}
+header a{
+    color: rgba(255, 255, 0, 0.799);
+    font-weight: bold;
+    /* text-decoration: none; */
+}
+header a:hover{
+    background-color: darkorange;
+}
+footer{
+    height: 15vh;
+}
+h1,h2,h3{
+    margin: 4vh 0;
+}
+
+h1, h2{
+    color: brown !important;/*prioriza a hierarquia*/
+    text-shadow: 2px 2px 3px gray;
+    text-align: center;
+}
+h2:before/*adiciona um conteúdo antes da tag e não pode ser selecionada*/
+{
+    content: "- ";
+    color: brown;
+    
+}
+h2::after/*adiciona um conteúdo depois da tag e não pode ser selecionada*/
+{
+    content: " ...";
+    color: brown;
+}
+p, pre{
+    margin: 2vh 0;;
+}
+ul,ol{
+    padding-left: 20px;
+}
+nav{
+    margin:0 0 2vh 0;
+    text-align: center;
+    background-color: rgb(114, 116, 112);
+    /* padding: 1% 0; */
+}
+nav ul{
+    list-style: none;/*tira os marcadores da lista*/
+    padding-left: 0;
+}
+nav ul li{
+       display: inline-block; /*deixa a visualização horizontal*/
+       margin: 0;
+       /* padding: 2vh 0.5%; */
+}
+nav ul li a{
+    color: #ffff;
+    font-weight: 700; /*negrito*/
+    text-transform: uppercase; /*caixa alta*/
+    text-decoration: none; /*tira o sublinhado das ancoras*/
+    font-size: 2vh; /*responsividade na ancoras*/
+    display: block;
+    white-space: nowrap;
+    padding: 2vh 1vh;
+    /* border: 1px solid black; */
+}
+nav ul li:hover,/*hover nos itens da nav*/
+nav ul li.destaque:hover/*hover na classe destaque*/
+{
+    background-color: #ccc;
+    /* padding: 2vh 0.5%; */
+}
+nav ul li:hover a{
+    color: yellow;
+}
+section article:nth-of-type(1)/*aplica no primeiro article/primeira section - borda, sombra e espaçamento*/
+{
+    box-shadow: 10px 10px 10px #999;
+    border-radius: 0 0 25px 0;
+    padding: 0 0 3% 0;
+}
+table{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    /* text-align: left; */
+    border-collapse: collapse;
+}
+table td, table th{
+    border: 1px solid #ccc;
+    text-align: center;
+}
+table thead tr:first-child{
+    border-bottom: 2px solid #000;
+}
+table th{
+    padding-bottom: 1%;
+}
+table tr td:first-child, 
+table tr th:first-child{
+    text-align: left;
+    padding-left: 1%;
+}
+table tbody tr:nth-child(2){
+    background-color: #999;
+}
+table td[rowspan="4"]{
+    width: 15%;
+    height: 100px;
+    border-bottom: none;
+    border-top: none;
+    background-color: #ccc;
+    text-align: center;
+}
+/* Classes */
+.art{
+    border: 1px solid #ccc;
+}
+.form{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 1%;
+}
+.form fieldset{
+    border: none;
+}
+.form legend{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+.form .label{
+    font-weight: bold;
+    display: inline-block;
+    width: 80px;
+    margin-bottom: 1vh;
+}
+.form button{
+    border: none;
+    outline: none;
+    background-color: rgb(79, 77, 77);
+    padding: 1%;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: rgb(39, 39, 37);
+}
+.ex-03{
+    color: blue !important;
+    border: 1px solid #000;
+    letter-spacing: 0.05em;
+    padding: 1%;
+}
+.paragrafo{
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.border{
+    border: 1px solid #ccc;
+}
+.paises{
+    background-image: url(../img/planoDeFundo/plano4.jpg);
+    background-size: cover;
+    background-position: 19.7vw 0;
+    background-repeat: no-repeat;
+    padding-left: 0;
+}
+.paises li{
+    background-color: rgba(81, 168, 81, 0.3);/*cor ou marca dagua sobre background-image acima*/
+    /* padding-left: 0 !important; */
+    list-style: none;
+    padding: 0.5vh;
+    width: 18vw;
+    font-size: 2vh;
+ }
+
+/* odd=impar even=par */
+.paises li:nth-child(odd)/*controla par e impar -> coloquei a cor nos pares*/
+{
+    color: blue;    
+}
+.destaque{
+    background-color: #000;
+    /* padding: 0.8%; */
+    border-radius: 10px;
+}
+div.logo{
+    position: absolute;
+    top: 2vh;
+    width: 100%;
+    text-align: center;
+}
+div.logo img{
+    height: 15vh;/*tamanho menor que os 25vh do header (onde a div logo esta dentro)*/
+    filter: invert(1); /*inverte a cor do logo e 0.1 a 1 (0 a 100%)*/
+}
+.w-10{
+    width: 10%;
+}
+.w-25{
+    width: 25%;
+}
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+
+.img-png{
+    background-color: khaki;
+    background-image: url(../img/forest-bg.jpg);/*img de fundo (floresta)*/
+    background-size: 100% 100%;/*para adaptar no tamanho da div img-png 100%largura e 100%altura*/
+    padding: 2%;
+    position: relative;
+    height: 80vh;
+}
+.img-png img:nth-of-type(1){/*controla a img individualmente img t-rex*/
+    position: absolute;
+    left: 20%;
+    top: 6vh;
+    z-index: 1;/*sobrepoe a img 2 ( o t-rex fica na frente do rapaz(susto)*/
+}
+.img-png img:nth-of-type(2){/*controla a img individualmente img rapaz*/
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    z-index: 0;/*a img susto fica por tras da img t-rex*/
+}
+/* ID */
+
+
+/* Media Queries */
+@media screen and (min-width: 2048px){
+    nav ul li a{
+        font-size: 1.2vh;
+    }
+    .img-png img:nth-of-type(1){
+        top: 25vh;
+    }
+    .img-png img:nth-child(2){
+        top: 65%;
+    }
+}
+@media  screen and (max-width: 426px) and (orientation: portrait) {
+    #menuhb{
+        display: block;
+    }
+    div.logo {
+        top: 9vh;
+    }
+    div.logo img{
+        height: 12vh;
+    }
+    nav{
+        width: 55%;
+        position: absolute;
+        right: 0;
+        background-color: rgb(114, 116, 112,0.8);
+        text-align: left;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li{
+        display: block;
+        border-bottom: 1px solid #000;
+    }
+    nav ul li a{
+        padding: 1vh 1vh;        
+    }
+    .destaque{
+        background-color: transparent;
+    }
+}

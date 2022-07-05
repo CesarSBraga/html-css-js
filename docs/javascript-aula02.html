@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <link rel="stylesheet" href="../css/estilo.css" type="text/css"/>
+    <script  src="../js/controle-2.js"></script>
+</head>
+<!-- Estilos internos -->
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    h1{
+        /* !important quebra hierarquia do estilo */
+        color: blue !important;
+    }
+    h2{
+        color: green;
+    }
+</style>
+<!-- BODY -->
+<body>
+     <!-- HEADER -->
+    <header>
+        <p>São Paulo, &nbsp;20 de Maio de 2022</p>
+        <p><a target="_blank" href="https://submarino.com.br">SUBMARINO</a></p>
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+    </header>
+
+   
+       
+        
+        <!-- NAV -->
+    <nav>
+        <div id="menuhb">
+            <img src="../img/misc/hamburguer.png" alt="">
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="imagens.html">Imagens</a></li>
+            <li><a href="tabelas.html">Tabelas</a></li>
+            <li><a href="css.html">Css</a></li>
+            <li><a href="animacao.html">Animação</a></li>
+            <li><a href="iframe.html">Iframe</a></li>
+            <li class="destaque"><a>Javascript</a></li>
+            <li><a href="jquery.html">Jquery</a></li>
+            <li><a href="bootstrap.html">Bootstrap</a></li>
+            <li><a href="responsividade.html">Responsividade</a></li>
+            <li><a href="diagramacao.html">Diagramação</a></li>
+            <li><a href="storage.html">Local Storage</a></li>
+            <li><a href="formularios.html">Formulários</a></li>
+        </ul>
+    </nav>
+
+    <div id="conteudo">
+
+        <!-- SECTION -->
+        <section>
+            <h1 style="color: red;">JavaScript 02!!!!</h1>
+            <h2>JavaScript Aula 02</h2>
+            <a href="../docs/javascript.html"><h4>Voltar para JavaScript 01</h4></a>
+            <article>
+
+                
+                
+                <p>
+                    <!-- <strong> (bold) negrito
+                         <mark> - marcação de texto
+                         <em> italico  -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tenetur neque qui, atque enim eos voluptatem illo cum aspernatur amet cumque, velit inventore quae? <strong>Minima molestias ducimus reprehenderit iusto eos?</strong>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.<mark> Ullam ducimus nisi maiores</mark>, ratione distinctio, harum rem porro modi quis minus quibusdam odit corporis veritatis eveniet? Ducimus, molestiae hic. Hic, nemo.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. <em>Autem illo ab sit commodi blanditiis dolores dolorem</em> officia ipsum sequi necessitatibus non pariatur excepturi vel ipsam, temporibus culpa amet quis eveniet.
+                </p>
+
+               
+                <hr/>
+
+            </article>
+
+            <article>
+                <div>
+                    <h3>Escolha um Produto</h3>
+                    <select id="produtos">
+                        <option>...</option>
+                        <option value="Phone Wireless">Phone Wireless</option>
+                        <option value="Ryzen 7">Ryzen 7</option>
+                        <option value="Inspiron A4">Inspiron A4</option>
+                        <option value="Fone Bluetooth">Fone Bluetooth</option>
+                        <option value="Note Game">Note Game</option>
+                        <option value="Fone Philips">Fone Philips</option>
+                    </select>
+                </div>   
+                <div id="descProduto" style="display: flex; margin: 20px 0;">
+                    <img src="../img/produtos/gamer-acer.jpg" alt=""/>
+                    <p>Tricolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem accusantium nulla, deserunt perspiciatis, ipsa reiciendis aliquid, maxime at similique doloremque! Dolorum illum consectetur inventore!</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>CreateElement dentro do For</h2>
+                <div id="box-01"></div>
+
+                <h2>Galeria de imagens usando For</h2>
+                <div id="box-02" class="box"></div>
+            </article>
+
+
+
+           
+        </section>
+        <!-- ASIDE -->
+        <aside></aside>
+        
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy;2022 - Todos os direitos reservados</p>
+    </footer>
+</body>
+
+
+</html>
+<script>
+    // caixas de alertas//
+    // alert("hello world!");
+    // confirm("Bora aprender JavaScript?");
+</script>
